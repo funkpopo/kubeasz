@@ -14,7 +14,7 @@ set -o pipefail
 #set -o xtrace
 
 # default settings, can be overridden by cmd line options, see usage
-DOCKER_VER=29.1.5
+DOCKER_VER=28.5.2
 KUBEASZ_VER=3.6.8
 K8S_BIN_VER=v1.34.3
 # https://github.com/easzlab/dockerfile-kubeasz-ext-bin
@@ -445,6 +445,7 @@ function get_extra_images() {
       IMAGES=(\
           "apecloud/dbctl:0.1.8" \
           "apecloud/agamotto:0.1.2-beta.1" \
+          "apecloud/redis:8.2.1" \
           "apecloud/redis-stack-server:7.2.0-v14" \
           "apecloud/redis-stack-server:7.2.0-v18" \
         )
