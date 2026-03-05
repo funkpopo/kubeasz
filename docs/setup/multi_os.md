@@ -31,15 +31,6 @@ apt update
 apt install iptables -y
 ```
 
-## Alibaba
-
-- Alibaba Linux 3.2104 LTS：安装前需要设置如下：
-
-``` bash
-# 修改使用dnf包管理
-sed -i 's/package/dnf/g' /etc/kubeasz/roles/prepare/tasks/redhat.yml
-```
-
 ## openEuler
 
 - openEuler 24.03 需要安装iptables
